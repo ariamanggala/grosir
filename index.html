@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>App Grosir Sembako</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body class="align-items-start pt-0 d-flex justify-content-center">
+    <section id="main" class="col-md-6 bg-light">
+        <div class="container-md">
+            <h1 class="my-4 title text-center text-uppercase">Toko Sembako Al-fatihah</h1>
+
+            <!-- Product Cards -->
+            <div class="row d-flex justify-content-center" id="product-list">
+                <!-- isi produk -->
+            </div>
+
+            <!-- Cart Section -->
+            <div class="mt-5 py-5 col-md-6">
+                <h2 class="">Keranjang Kamu</h2>
+                <ul id="cart-list">
+                    <!-- isi keranjang --> 
+                </ul>
+                <p>Total: Rp<span id="total">0</span></p>
+                <button class="btn btn-success" onclick="buyItems()">Bayar</button>
+            </div>
+
+            <!--  Section Purchases Table -->
+            <div class="mt-5 col-md-12">
+                <h2>History Pembelian</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nama Produk</th>
+                            <th>Harga/satuan</th>
+                            <th>Jumlah</th>
+                            <th>Gambar</th>
+                            <th>Total Harga</th>
+                        </tr>
+                    </thead>
+                    <tbody id="purchase-table-body">
+                        <!-- Tabel disini -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <div id="splash">
+        <h1 class="textsplash text-bold text-uppercase pb-5">Selamat datang di toko al-fatihah</h1>
+    </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var splash = document.getElementById("splash");
+
+        // Disable scrolling
+        document.body.style.overflow = "hidden";
+
+        setTimeout(() => {
+            splash.classList.toggle("fade");
+
+            
+            setTimeout(() => {
+                splash.style.display = "none";
+                document.body.style.overflow = "auto";
+            }, 2000); 
+        }, 2000);
+    });
+</script>
+
+
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/register.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

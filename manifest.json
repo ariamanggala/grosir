@@ -1,0 +1,22 @@
+{
+    "name": "App UTS ARIA MANGGALA",
+    "short_name": "grosir",
+    "description": "Membuat Aplikasi Grosir UTS ARIA MANGGALA dengan javascript PWA",
+    "icons": [
+        {
+            "src": "assets/images/logo.jpeg",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/images/logo.jpeg",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#1F3641",
+    "background_color": "#ffffff",
+    "prefer_related_applications": false
+}

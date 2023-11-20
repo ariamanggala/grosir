@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #a72828;
+    font-family: 'Open Sans', sans-serif;
+}
+body.splash-open {
+    overflow: hidden;
+}
+
+.title{
+    font-weight: 600;
+}
+
+#splash {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #a72828;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transition: opacitiy 1s;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+#splash.fade {
+    opacity: 0;
+}
+
+.textsplash {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+.card-buttons button {
+    background-color: #a72828; 
+    color: #fff; 
+    border: none;
+}
+
+.card-buttons button:hover {
+    background-color: #6b0202; 
+}
+.table {
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .col-sm-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
